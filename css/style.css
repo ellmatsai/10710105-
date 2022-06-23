@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #ccc;
+}
+
+.wrap {
+    background: #fff;
+    width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+.wrap h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #666;
+}
+
+.wrap h2 span {
+    font-size: 14px;
+    color: #444;
+}
+
+.wrap h2 span::before {
+    content: "/";
+    margin-right: 6px;
+}
+
+.profile {
+    background: #eee;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.profile .left {
+    width: 66%;
+    float: left;
+    margin-right: 20px;
+}
+
+.profile .left img {
+    width: 100%;
+}
+
+.profile .right {}
+
+.profile .right h1.name {
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: 120px;
+}
+
+.profile .right .info {
+    font-size: 14px;
+    margin-bottom: 60px;
+    line-height: 180%;
+}
+
+.profile .right .link {
+    /* margin-bottom: 20px; */
+}
+
+.profile .right .link a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.profile .right .link a:hover {
+    opacity: .5;
+}
+
+.profile .right .link a img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.profile .right .mail {
+    font-size: 14px;
+    /* margin-bottom: 5px; */
+}
+
+.profile .right .mail::before {
+    content: "E";
+    font-weight: bold;
+    color: #666;
+}
+
+.profile .right .mail a {
+    /* color: rgb(82, 186, 255); */
+    color: rgb(5, 213, 224)
+}
+
+.profile .right .mail a:hover {
+    text-decoration: none;
+    color: rgb(255, 112, 90);
+}
+
+.profile .right .phone {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.profile .right .phone::before {
+    content: "P";
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.skill {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.skill ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.skill ul li {
+    width: 25%;
+    float: left;
+    margin-right: 6%;
+    margin-bottom: 8px;
+    padding-top: 4px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.skill ul li::before {
+    content: "";
+    background: url('../images/insights_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    width: 32px;
+    height: 24px;
+    /* font-size: 14px;
+    font-weight: bold;
+    color: #666; */
+}
+
+.skill ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.skill ul li:nth-child(1n) {
+    margin-left: 8px;
+}
+
+.skill ul li span {
+    margin-left: 8px;
+    color: rgb(255, 112, 90);
+    font-style: italic;
+}
+
+.experience {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.experience .leftB {
+    float: left;
+    width: 48%;
+    margin-right: 3%;
+    padding-left: 3px;
+}
+
+.experience .rightB {
+    float: left;
+    width: 48%;
+}
+
+.experience ul {
+    list-style: none;
+    font-size: 14px;
+    border-left: 2px solid #aaa;
+    margin-top: 16px;
+}
+
+.experience ul li {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.experience ul li span {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.experience ul li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left: -5px;
+    top: 8px;
+}
+
+
+/* .work {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.work ul {
+    list-style: none;
+}
+
+.work ul li {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.work ul li img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.work ul li:hover img {
+    transform: scale(1.1);
+}
+
+.work ul li .text {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    padding: 8px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    transition: all 1s;
+    text-align: center;
+}
+
+.work ul li:hover .text {
+    bottom: 0;
+} */
+
+.waterfall {
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.waterfall_content {
+    /* 全部圖片最外圍多包一個waterfall_content */
+    column-count: 4;
+    column-gap: 10px;
+}
+
+.waterfall_content .item {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto 6px;
+    break-inside: avoid;
+    position: relative;
+    overflow: hidden;
+    /* 這個要加超出框框的圖片說明才會消失 */
+}
+
+.waterfall_content .item img {
+    width: 100%;
+    object-fit: contain;
+    /* 外框.item沒有給高度用object-fit: cover;無法裁切 */
+    object-position: right top;
+    display: block;
+}
+
+.waterfall_content .item .text {
+    position: absolute;
+    bottom: -100%;
+    /* 原先要整塊消失*/
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    transition: all 1s;
+    /* 動態效果和大小寫在之前喔*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waterfall_content .item:hover .text {
+    bottom: 0;
+    /* 出現*/
+}
